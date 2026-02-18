@@ -95,26 +95,21 @@ html, body {
     }
 
 
-    .gallery-grid {
+.gallery-grid {
   display: grid;
-  margin: 20px;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr); /* три фото на десктопе */
   gap: 10px;
 }
 
-.gallery-grid img {
-  width: 100%;
-  height: 300px; /* фиксируем высоту */
-  object-fit: cover; /* аккуратно обрезает */
-  border-radius: 10px;
+@media (max-width: 992px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr); /* две фото на планшете */
+  }
 }
 
-
-/* На телефоне — одна картинка в ряд */
-
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .gallery-grid {
-    grid-template-columns: 1fr; /* одно фото в ряд на телефоне */
+    grid-template-columns: 1fr; /* одно фото на телефоне */
   }
 
   .gallery-grid img {
@@ -122,10 +117,6 @@ html, body {
     height: auto; /* чтобы не искажались */
   }
 }
-
-
-
-
 
 
 
@@ -259,6 +250,7 @@ font-family: 'Times New Roman', Times, serif;
   0%   { transform: translateX(100%); }
   100% { transform: translateX(-100%); }
 }
+
 
 
 
