@@ -33,7 +33,7 @@ html, body {
     /* 🔹 Адаптация для планшета */
     @media (max-width: 768px) {
       .container {
-        flex-direction: column; /* карточки становятся вертикальными */
+        flex-direction: row; /* карточки становятся вертикальными */
       }
       body {
         font-size: 14px; /* уменьшаем текст */
@@ -260,6 +260,7 @@ font-family: 'Times New Roman', Times, serif;
   0%   { transform: translateX(100%); }
   100% { transform: translateX(-100%); }
 }
+
 
 
 
