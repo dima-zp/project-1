@@ -97,7 +97,7 @@ html, body {
     .gallery-grid {
   display: grid;
   margin: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
 
@@ -248,3 +248,4 @@ font-family: 'Times New Roman', Times, serif;
   0%   { transform: translateX(100%); }
   100% { transform: translateX(-100%); }
 }
+
